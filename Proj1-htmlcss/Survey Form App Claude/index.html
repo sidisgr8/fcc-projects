@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Journey Survey</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="title">Code Journey Survey Form</h1>
+        <p id="description">Help us understand your coding experiences and learning path</p>
+        
+        <form id="survey-form">
+            <div class="form-group">
+                <label id="name-label" for="name">Name</label>
+                <input 
+                    type="text" 
+                    id="name" 
+                    name="name" 
+                    placeholder="Enter your full name" 
+                    required
+                >
+            </div>
+
+            <div class="form-group">
+                <label id="email-label" for="email">Email</label>
+                <input 
+                    type="email" 
+                    id="email" 
+                    name="email" 
+                    placeholder="Enter your email address" 
+                    required
+                >
+            </div>
+
+            <div class="form-group">
+                <label id="number-label" for="number">Years of Coding Experience</label>
+                <input 
+                    type="number" 
+                    id="number" 
+                    name="number" 
+                    min="0" 
+                    max="50" 
+                    placeholder="0-50 years"
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="dropdown">Primary Programming Language</label>
+                <select id="dropdown" name="language">
+                    <option value="">Select a language</option>
+                    <option value="javascript">JavaScript</option>
+                    <option value="python">Python</option>
+                    <option value="java">Java</option>
+                    <option value="csharp">C#</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Preferred Learning Method</label>
+                <div class="radio-group">
+                    <input 
+                        type="radio" 
+                        id="online-courses" 
+                        name="learning-method" 
+                        value="online-courses"
+                    >
+                    <label for="online-courses">Online Courses</label>
+
+                    <input 
+                        type="radio" 
+                        id="books" 
+                        name="learning-method" 
+                        value="books"
+                    >
+                    <label for="books">Books</label>
+
+                    <input 
+                        type="radio" 
+                        id="tutorials" 
+                        name="learning-method" 
+                        value="tutorials"
+                    >
+                    <label for="tutorials">Video Tutorials</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Technologies You're Interested In</label>
+                <div class="checkbox-group">
+                    <input 
+                        type="checkbox" 
+                        id="web-dev" 
+                        name="technologies" 
+                        value="web-dev"
+                    >
+                    <label for="web-dev">Web Development</label>
+
+                    <input 
+                        type="checkbox" 
+                        id="mobile-dev" 
+                        name="technologies" 
+                        value="mobile-dev"
+                    >
+                    <label for="mobile-dev">Mobile Development</label>
+
+                    <input 
+                        type="checkbox" 
+                        id="ai-ml" 
+                        name="technologies" 
+                        value="ai-ml"
+                    >
+                    <label for="ai-ml">AI/Machine Learning</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="comments">Additional Comments</label>
+                <textarea 
+                    id="comments" 
+                    name="comments" 
+                    placeholder="Share your thoughts..."
+                ></textarea>
+            </div>
+
+            <button type="submit" id="submit">Submit Survey</button>
+        </form>
+    </div>
+</body>
+</html>
