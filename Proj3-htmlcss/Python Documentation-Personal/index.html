@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Documentation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav id="navbar">
+        <header>Python Documentation</header>
+        <a class="nav-link" href="#Introduction">Introduction</a>
+        <a class="nav-link" href="#Getting_Started">Getting Started</a>
+        <a class="nav-link" href="#Data_Types">Data Types</a>
+        <a class="nav-link" href="#Control_Flow">Control Flow</a>
+        <a class="nav-link" href="#Functions">Functions</a>
+    </nav>
+
+    <main id="main-doc">
+        <section class="main-section" id="Introduction">
+            <header>Introduction</header>
+            <p>Python is a high-level, interpreted programming language that emphasizes code readability with the use of significant indentation.</p>
+            <p>Created by Guido van Rossum and released in 1991, Python's design philosophy emphasizes code readability with the use of significant whitespace.</p>
+            <p>Python features a dynamic type system and automatic memory management and supports multiple programming paradigms.</p>
+            <ul>
+                <li>Easy to learn and read</li>
+                <li>Large standard library</li>
+                <li>Active community support</li>
+            </ul>
+        </section>
+
+        <section class="main-section" id="Getting_Started">
+            <header>Getting Started</header>
+            <p>To begin with Python, you'll need to download and install it from python.org.</p>
+            <p>After installation, you can verify Python is installed by opening a terminal and typing:</p>
+            <code>python --version</code>
+            <p>Create your first Python program:</p>
+            <code>print("Hello, World!")</code>
+        </section>
+
+        <section class="main-section" id="Data_Types">
+            <header>Data Types</header>
+            <p>Python has several built-in data types that you'll use frequently.</p>
+            <p>Here are the most common ones:</p>
+            <ul>
+                <li>Numbers (int, float)</li>
+                <li>Strings (str)</li>
+                <li>Lists (list)</li>
+            </ul>
+            <code>x = 42          # Integer
+y = 3.14        # Float
+name = "Python"  # String
+nums = [1, 2, 3] # List</code>
+        </section>
+
+        <section class="main-section" id="Control_Flow">
+            <header>Control Flow</header>
+            <p>Control flow lets you control which instructions are executed based on conditions.</p>
+            <p>Python uses indentation to define blocks of code.</p>
+            <code>if condition:
+    # do something
+elif other_condition:
+    # do something else
+else:
+    # do another thing</code>
+            <ul>
+                <li>if statements for conditional execution</li>
+                <li>for loops for iteration</li>
+                <li>while loops for conditional iteration</li>
+            </ul>
+        </section>
+
+        <section class="main-section" id="Functions">
+            <header>Functions</header>
+            <p>Functions are blocks of reusable code that perform specific tasks.</p>
+            <p>Define functions using the def keyword:</p>
+            <code>def greet(name):
+    return f"Hello, {name}!"
+
+# Call the function
+message = greet("Python")</code>
+            <p>Functions can have parameters and return values.</p>
+            <p>They help organize code and prevent repetition.</p>
+        </section>
+    </main>
+</body>
+</html>
